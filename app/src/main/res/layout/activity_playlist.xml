@@ -6,25 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
-    tools:context=".PlaylistActivity">
+    tools:context=".PlaylistActivity"
+    android:background="@color/black">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <include
-            layout = "@layout/main_toolbar" />
-
-        <TextView
+        <ListView
+            android:id="@+id/listViewSong"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Playlist"
-            android:textSize="50sp"
-            android:textStyle="bold"
-            android:gravity="center" />
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10.0sp"
+            android:padding="8dp"/>
 
-    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="300dp"
