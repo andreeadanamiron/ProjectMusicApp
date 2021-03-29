@@ -69,15 +69,14 @@ public class MainActivity extends AppCompatActivity {
     public static void logout(Activity activity)
     {
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
-        builder.setTitle("Logout");
-        builder.setMessage("Are you sure you want to logout?");
+        builder.setTitle("Close");
+        builder.setMessage("Are you sure you want to close the app?");
 
         builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 activity.finishAffinity();
                 System.exit(0);
-                //CHANGE TO GO TO LOGIN SCREEN
             }
         });
 
